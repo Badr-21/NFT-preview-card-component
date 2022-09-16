@@ -62,6 +62,7 @@ p {
     border-radius: .5rem;
     z-index: 99;
     opacity: 0;
+    transition: all ease-in .5s;
 }
 
 .container .image:hover::before{
@@ -76,11 +77,13 @@ p {
     left: 50%;
     -webkit-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
-    display: none;
+    opacity: 0;
+    -webkit-transition: all .5s ease;
+    transition: all ease-in .5s;
 }
 
 .container .image:hover i {
-    display: block;
+    opacity: 1;
 }
 
 .container > h1 {
@@ -139,3 +142,15 @@ p {
     color: var(--Cyan);
     cursor: pointer;
 }
+
+
+@media (max-width: 350px) {
+    .container > p:last-of-type {
+        font-weight: 400;
+        display: flex;
+        justify-content: center;
+        color: var(--Cyan);
+        flex-direction: column;
+        align-items: center;
+    }
+    }
