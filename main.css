@@ -111,9 +111,15 @@ p {
     color: var(--Soft-blue);
 }
 
+.container p .fa-brands {
+    margin-right: -5rem;
+}
+
+
 .container .avatar {
     display: flex;
     align-items: center;
+    border-top: .1rem solid var(--Soft-blue);
 }
 
 .container .avatar img {
